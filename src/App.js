@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={"https://1000logos.net/wp-content/uploads/2021/05/Google-logo.png"} className="App-logo" alt="logo" />
+        <img src={"https://lh3.googleusercontent.com/drive-viewer/AJc5JmR6o6nAbJOIAOrS5PuKLQRYBvudbW7sKRcSTNBPlxVqP7EhnoywIz0v1e58-zUOpO24kQojH8o=w1920-h937"} className="App-logo" alt="logo" />
         <form onSubmit={handleSumbit}>
            <input type="text" name="theQuestion" br/>
         <button>search</button>
