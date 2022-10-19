@@ -37,7 +37,7 @@ def getMyAns(he_q):
 # the api function
 
 
-@app.route("/result", methods=["POST"])
+@app.route("/result", methods=["POST", "GET"])
 def result():
     output = request.get_json()
     the_q = str(output['the_q'])
