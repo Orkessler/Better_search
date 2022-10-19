@@ -1,13 +1,15 @@
-import axios, { Axios } from 'axios';
+//import axios, { Axios } from 'axios';
+import  Axios  from 'axios';
 import './App.css';
 import React, {useState} from 'react';
 
 function App() {
   const url="http://127.0.0.1:5000/result"
-  const [data,setData]= useState({the_q: ""})
+  const [data,setData]= useState({the_q:""})
 
   const handleSumbit=(e)=>{
-    Axios.post(url, {the_q: data.the_q}).then(res=>{console.log(res.data)})
+    e.preventDefault();
+    Axios.post(url,{the_q: data.the_q})//.then(res=>{console.log(res.data)})
   }
 
   const handle=(e)=>{
@@ -15,9 +17,9 @@ function App() {
     newData[e.target.id]=e.target.value;
     setData(newData);
     console.log(newData);
-    Axios.post(url, {the_q: data.the_q}).then(res=>{console.log(res.data)})
+    //Axios.post(url, {the_q: data.the_q})//.then(res=>{console.log(res.data)})    
   }
-  
+
   return (
     <div className="App">
       <header className="App-header">
