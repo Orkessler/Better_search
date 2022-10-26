@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src="https://lh3.googleusercontent.com/drive-viewer/AJc5JmR6o6nAbJOIAOrS5PuKLQRYBvudbW7sKRcSTNBPlxVqP7EhnoywIz0v1e58-zUOpO24kQojH8o=w1920-h937" className="App-logo" alt="logo" />
+        <img src="https://raw.githubusercontent.com/Orkessler/my_search/master/better_logo.png?token=GHSAT0AAAAAAB2CR3CPPE2SLIWJX2EHJ3AGY2ZH5FA" className="App-logo" alt="logo" />
         <form onSubmit={handleSumbit}>
            <input onChange={(e)=> handle(e)} type="text" id="the_q" value={data.the_q} />
         <button>search</button>
