@@ -24,6 +24,22 @@
   color: white;
 }
 
+App.input{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 591px;
+  height: 46px;
+  left: 657px;
+  top: 384px;
+  
+  background: #FFFFFF;
+  border: 1px solid #DFE1E5;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.28);
+  border-radius: 55px;
+
+}
+
 .App-link {
   color: #61dafb;
 }
