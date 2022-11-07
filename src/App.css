@@ -24,14 +24,10 @@
   color: white;
 }
 
-App.input{
+.App-input{
   box-sizing: border-box;
-
-  position: absolute;
   width: 591px;
   height: 46px;
-  left: 657px;
-  top: 384px;
   
   background: #FFFFFF;
   border: 1px solid #DFE1E5;
