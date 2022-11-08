@@ -7,13 +7,13 @@ import myLogo from './better_logo.png';
 
 function App() {
   const url="http://127.0.0.1:5000/result"
-  const [data,setData]= useState({the_q:null})
+  const [data,setData]= useState({the_q:''})
   const [showResults, setShowResults] = React.useState(false)
 
   const handleSumbit=(e)=>{
     e.preventDefault();
     Axios.post(url,{the_q: data.the_q});//.then(res=>{console.log(res.data)})
-    data.the_q&&setShowResults(true);
+    data.the_q!==''&&setShowResults(true);
   }
 
   const handle=(e)=>{
@@ -24,12 +24,10 @@ function App() {
     //Axios.post(url, {the_q: data.the_q})//.then(res=>{console.log(res.data)})    
   }
   const Results = () => (
-    <div id="results" className="search-results">
-      <script async src="https://cse.google.com/cse?cx=23c24c7e71d72499d">
-     </script>
-    <div class="gcse-search"></div>
+    <div>
+         <h1>{data.the_q}</h1>
         <Iframe url="https://www.n12.co.il/"  width="90%" height="300" ></Iframe>
-    </div>
+        </div>
   )
 
 
@@ -44,11 +42,6 @@ function App() {
         <button>חפש</button>
         </form>
       </header>
-      <body> 
-      <script async src="https://cse.google.com/cse.js?cx=23c24c7e71d72499d">
-     </script>
-     <div class="gcse-search"></div>
-      </body>
       { showResults ? <Results/> : null }
     </div>
   );
