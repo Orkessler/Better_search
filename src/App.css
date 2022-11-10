@@ -21,8 +21,15 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(6, 0, 0);
 }
+
+.App body{
+  min-height: 100vh;
+  align-items: top;
+  justify-content: center;
+}
+
 
 .App-input{
   box-sizing: border-box;
