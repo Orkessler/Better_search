@@ -12,9 +12,15 @@ function App() {
 
   const handleSumbit=(e)=>{
     e.preventDefault();
-    Axios.post(url,{the_q: data.the_q}).then(res=>{console.log(res.data)})
-    this.data.the_ans=Axios.post(url,{the_q: data.the_q})
+    //Axios.post(url,{the_q: data.the_q}).then(res=>{console.log(res.data)})
+    //this.data.the_ans=Axios.post(url,{the_q: data.the_q})
+    const newData={...data}
+    newData[e.target.the_ans]=e.target.value;
+    setData(newData);
+    setData({the_ans:'הניסוי צלח'})
+    console.log(data)
     data.the_q!==''&&setShowResults(true);
+  
   }
 
   const handle=(e)=>{
@@ -26,7 +32,7 @@ function App() {
   const Results = () => (
     <div>
          <h1>{data.the_q}</h1>
-         {/*< Iframe url="https://www.e-vrit.co.il/Product/26136/%D7%97%D7%99%D7%99%D7%9D"  width="90%" height="300" ></Iframe>*/}
+        {/*  < Iframe url="https://googlepp.orikessler.repl.co/"  width="90%" height="300" ></Iframe>*/}
         </div>
   )
 
