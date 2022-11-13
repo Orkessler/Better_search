@@ -12,15 +12,17 @@ function App() {
 
   const handleSumbit=(e)=>{
     e.preventDefault();
-    //Axios.post(url,{the_q: data.the_q}).then(res=>{console.log(res.data)})
-    //this.data.the_ans=Axios.post(url,{the_q: data.the_q})
-    const newData={...data}
-    newData[e.target.the_ans]=e.target.value;
-    setData(newData);
-    setData({the_ans:'הניסוי צלח'})
+    //Axios.post(url,{the_q: data.the_q}).then(res=>{data.the_ans= res.data.the_ans})
+    getResponse();
+    setData(data);
     console.log(data)
     data.the_q!==''&&setShowResults(true);
   
+  }
+  async function getResponse() {
+  console.log("אורי")
+  await Axios.post(url,{the_q: data.the_q}).then(res=>{data.the_ans= res.data.the_ans})
+
   }
 
   const handle=(e)=>{
@@ -31,7 +33,7 @@ function App() {
   }
   const Results = () => (
     <div>
-         <h1>{data.the_q}</h1>
+         <h1>{data.the_ans}</h1>
         {/*  < Iframe url="https://googlepp.orikessler.repl.co/"  width="90%" height="300" ></Iframe>*/}
         </div>
   )
