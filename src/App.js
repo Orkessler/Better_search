@@ -11,17 +11,14 @@ function App() {
   const [showResults, setShowResults] = React.useState(false)
 
   const handleSumbit=(e)=>{
-    e.preventDefault();
-    //Axios.post(url,{the_q: data.the_q}).then(res=>{data.the_ans= res.data.the_ans})
     getResponse();
-    setData(data);
-    console.log(data)
-    data.the_q!==''&&setShowResults(true);
-  
+    e.preventDefault(); 
   }
+
   async function getResponse() {
-  console.log("אורי")
   await Axios.post(url,{the_q: data.the_q}).then(res=>{data.the_ans= res.data.the_ans})
+  setData(data);
+  data.the_ans!==''&&setShowResults(true);
 
   }
 
@@ -29,7 +26,7 @@ function App() {
     const newData={...data}
     newData[e.target.id]=e.target.value;
     setData(newData);
-    console.log(newData);
+    //console.log(newData);
   }
   const Results = () => (
     <div>
