@@ -2,7 +2,7 @@
 import  Axios  from 'axios';
 import './App.css';
 import React, {useState} from 'react';
-//import Iframe from 'react-iframe';
+import Iframe from 'react-iframe';
 import myLogo from './better_logo.png';
 
 function App() {
@@ -14,6 +14,10 @@ function App() {
     getResponse();
     e.preventDefault(); 
   }
+  
+
+  function buildURL(string){ return "https:///www.google.com/search?q=" + encodeURIComponent(string)+"&igu=1"; }
+
 
   async function getResponse() {
   await Axios.post(url,{the_q: data.the_q}).then(res=>{data.the_ans= res.data.the_ans})
@@ -31,7 +35,7 @@ function App() {
   const Results = () => (
     <div>
          <h1>{data.the_ans}</h1>
-        {/*  < Iframe url="https://googlepp.orikessler.repl.co/"  width="90%" height="300" ></Iframe>*/}
+         < Iframe url={buildURL(data.the_q)}  width="90%" height="300" ></Iframe>
         </div>
   )
 
