@@ -1,4 +1,3 @@
-//import axios, { Axios } from 'axios';
 import  Axios  from 'axios';
 import './App.css';
 import React, {useState} from 'react';
@@ -35,7 +34,7 @@ function App() {
   const Results = () => (
     <div>
          <h1>{data.the_ans}</h1>
-         < Iframe url={buildURL(data.the_q)}  width="90%" height="300" ></Iframe>
+         < Iframe url={buildURL(data.the_q)}  width="90%" height="1700vh" ></Iframe>
         </div>
   )
 
@@ -52,6 +51,7 @@ function App() {
         </form>
         { showResults ? <Results/> : null }
       </header>
+
       
     </div>
   );
