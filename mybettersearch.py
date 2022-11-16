@@ -59,7 +59,6 @@ def result():
     return (cal)
 
 
-if 'app' == '__main__':
-    app.run()
-
-app.run(host='0.0.0.0', port=8080)
+if __name__ == '_main_':
+    app.run(debug=True, port=2000)
+app.run()

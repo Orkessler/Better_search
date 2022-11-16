@@ -5,7 +5,7 @@ import Iframe from 'react-iframe';
 import myLogo from './better_logo.png';
 
 function App() {
-  const url="https://googlepp.orikessler.repl.co/result"
+  const url="http://127.0.0.1:5000/result"
   const [data,setData]= useState({the_q:'',the_ans:''})
   const [showResults, setShowResults] = React.useState(false)
 
