@@ -4,7 +4,7 @@ import React, {useState} from 'react';
 import Iframe from 'react-iframe';
 import myLogo from './better_logo.png';
 import CircularProgress from '@mui/material/CircularProgress';
-import Button from '@mui/material/Button' ;
+//import Button from '@mui/material/Button' ;
 
 
 function App() {
@@ -46,7 +46,7 @@ function App() {
 
   return (
     <div className="App">
-      <Button className="App-explane"   margin-top="1px" margin-right= "2px" position="absolute" top="0" right="0">?למה החיפוש כאן יותר טוב מחיפוש הרגיל בגוגל</Button>
+     {/*<Button className="App-explane"   margin-top="1px" margin-right= "2px" position="absolute" top="0" right="0">?למה החיפוש כאן יותר טוב מחיפוש הרגיל בגוגל</Button>*/}
       <header className="App-header">
         <img src={myLogo} className="App-logo" alt="logo" />
         <form onSubmit={handleSumbit}>
