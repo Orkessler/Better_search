@@ -34,8 +34,8 @@
 
 .App-input{
   box-sizing: border-box;
-  width: 591px;
-  height: 46px;
+  width: 80vh;
+  height: 6vh;
   
   background: #FFFFFF;
   border: 1px solid #DFE1E5;

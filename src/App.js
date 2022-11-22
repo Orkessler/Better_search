@@ -8,21 +8,23 @@ import CircularProgress from '@mui/material/CircularProgress';
 
 
 function App() {
-  const url="https://googlepp.orikessler.repl.co/result"
-  const [data,setData]= useState({the_q:'',the_ans:''})
-  const [ showResults, setShowResults] = React.useState(false)
+
+  const url="https://googlepp.orikessler.repl.co/result"//The api 
+  const [data,setData]= useState({the_q:'',the_ans:''}) 
+  const [ showResults, setShowResults] = React.useState(false) 
   const [ showProgress, setShowProgress] = React.useState(false)
 
+  //When the user press "enter" or on search button
   const handleSumbit=(e)=>{
     setShowProgress(true)
     getResponse();
     e.preventDefault(); 
   }
   
-
+  //Build the google search iframe from the question.
   function buildURL(string){ return "https:///www.google.com/search?q=" + encodeURIComponent(string)+"&igu=1"; }
 
-
+  //Get the answer from the api and stop the progress circle
   async function getResponse() {
   await Axios.post(url,{the_q: data.the_q}).then(res=>{data.the_ans= res.data.the_ans})
   setData(data);
@@ -30,12 +32,14 @@ function App() {
   setShowProgress(false)
   }
 
+//Get the typing from the user
   const handle=(e)=>{
     const newData={...data}
     newData[e.target.id]=e.target.value;
     setData(newData);
-    //console.log(newData);
   }
+
+  //The Result components. It only appears when there are results for the search
   const Results = () => (
     <div>
          <h1>{data.the_ans}</h1>
