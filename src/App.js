@@ -5,13 +5,12 @@ import Iframe from 'react-iframe';
 import myLogo from './better_logo.png';
 import CircularProgress from '@mui/material/CircularProgress';
 //import Button from '@mui/material/Button';
-import Fab from '@mui/material/Fab';
-import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
+
 
 
 function App() {
 
-  //const url="https://googlepp.orikessler.repl.co/result"//The firs api option (need to restart every time)
+  //const url="https://googlepp.orikessler.repl.co/result"//The first api option (need to restart every time)
   const url="https://okessler.pythonanywhere.com/result"//The api
   const [data,setData]= useState({the_q:'',the_ans:''}) 
   const [ showResults, setShowResults] = React.useState(false) 
@@ -51,12 +50,8 @@ function App() {
         </div>
   )
 
-
   return (
     <div className="App">
-      <Fab color="primary" aria-label="add" sx={{width: "7vh",height: "7vh"}}>
-      <QuestionMarkIcon sx={{width: "3vh",height: "3vh"}} />
-      </Fab>
      {/*<Button className="App-explane"   margin-top="1px" margin-right= "2px" position="absolute" top="0" right="0">?למה החיפוש כאן יותר טוב מחיפוש הרגיל בגוגל</Button>*/}
       <header className="App-header">
         <img src={myLogo} className="App-logo" alt="logo" />
@@ -68,10 +63,7 @@ function App() {
         </form>
         { showResults ? <Results/> : null }
         { showProgress ? <CircularProgress /> : null }
-
-      </header>
-
-      
+      </header>  
     </div>
   );
 }
