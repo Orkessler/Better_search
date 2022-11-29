@@ -25,18 +25,10 @@
   color: rgb(6, 0, 0);
 }
 
-.App body{
-  min-height: 100vh;
-  align-items: top;
-  justify-content: center;
-}
-
-
 .App-input{
   box-sizing: border-box;
-  width: 80vh;
+  width: 80vmin;
   height: 6vh;
-  
   background: #FFFFFF;
   border: 1px solid #DFE1E5;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.28);
