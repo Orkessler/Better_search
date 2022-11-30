@@ -51,7 +51,7 @@ function App() {
   )
 
   return (
-    <div className="App">
+    <div  className="App">
      {/*<Button className="App-explane"   margin-top="1px" margin-right= "2px" position="absolute" top="0" right="0">?למה החיפוש כאן יותר טוב מחיפוש הרגיל בגוגל</Button>*/}
       <header className="App-header">
         <img src={myLogo} className="App-logo" alt="logo" />
