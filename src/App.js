@@ -1,4 +1,4 @@
-import  Axios  from 'axios';
+import  Axios  from 'axios'; 
 import './App.css';
 import React, {useState} from 'react';
 import Iframe from 'react-iframe';
@@ -39,7 +39,7 @@ function App() {
     const newData={...data}
     newData[e.target.id]=e.target.value;
     setData(newData);
-  }
+  } 
 
   //The Result components. It only appears when there are results for the search
   const Results = () => (
