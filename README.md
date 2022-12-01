@@ -1,5 +1,7 @@
+![Logo](./src/better_logo.png)
 
-#Better search-  a better search system than searching in Hebrew on Google.
+## Better search
+a better search system than searching in Hebrew on Google.
 
 Usually when the search on Google is done only in the language in which the user asked the question.
 In this way, the user is prevented from many answers that can be found in different languages.
@@ -29,7 +31,7 @@ Searching our website has a clear answer (translated from English).
 You can also see a situation where there is no answer to the search even in English (such as searching for the name of a street) where the user does not lose because we always add the Google search results in the iframe.
 
 --
-![sample gif](./my_demo.gif)
+![sample gif](./demo.gif)
 
 
 
@@ -38,5 +40,4 @@ You can also see a situation where there is no answer to the search even in Engl
 - [Ori Kessler](https://github.com/Orkessler)
 
 
-![Logo](./src/better_logo.png)
 
