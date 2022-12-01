@@ -22,8 +22,8 @@ in four steps:
 All this is done in a python api that we built here:
 - [Better search api](https://github.com/Orkessler/Better_search_API)
 
-Our project was built in react, js, css
-
+Frontend: react, js, css, html
+Backend:  python
 
 ## Demo
 When I search on Google:
