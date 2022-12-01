@@ -1,5 +1,6 @@
+![Logo](./src/better_logo.png)
 
-##Better search
+## Better search
 a better search system than searching in Hebrew on Google.
 
 Usually when the search on Google is done only in the language in which the user asked the question.
@@ -39,5 +40,4 @@ You can also see a situation where there is no answer to the search even in Engl
 - [Ori Kessler](https://github.com/Orkessler)
 
 
-![Logo](./src/better_logo.png)
 
