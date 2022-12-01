@@ -1,5 +1,8 @@
 ![Logo](./src/better_logo.png)
 
+
+[link](https://modular-seeker-369214.de.r.appspot.com/)
+
 ## Better search
 a better search system than searching in Hebrew on Google.
 
@@ -35,9 +38,10 @@ You can also see a situation where there is no answer to the search even in Engl
 
 
 
-## Authors
+## visit my linkdin
 
-- [Ori Kessler](https://github.com/Orkessler)
+- [Ori Kessler](https://www.linkedin.com/in/ori-kessler)
+
 
 ## Languages and Tools:
 
