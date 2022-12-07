@@ -42,6 +42,7 @@ function App() {
     const newData={...data}
     newData[e.target.id]=e.target.value;
     setData(newData);
+    console.log(data)
   } 
 
 
@@ -60,15 +61,18 @@ function App() {
       {/* <Button>?למה החיפוש כאן יותר טוב מחיפוש הרגיל בגוגל</Button> I decided to remove this button */}
       <header className="App-header">
         <img src={myLogo} className="App-logo" alt="logo" />
+        <div>
         <form onSubmit={handleSumbit}>
           <div>
              <input  placeholder="מה השאלה שלך?" onChange={(e)=> handle(e)} dir="rtl" type="text" id="userInput" className="App-input" autocomplete="off" />
           </div>
         <button>חיפוש</button>
         </form>
+        </div>
         { showResults ? <Results/> : null }
-        { showProgress ? <CircularProgress padding-top= "18px" /> : null }
+        { showProgress ? <CircularProgress padding-top= "18px" /> : null}
       </header>  
+
     </div>
   );
 }
