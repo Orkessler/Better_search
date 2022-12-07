@@ -42,7 +42,6 @@ function App() {
     const newData={...data}
     newData[e.target.id]=e.target.value;
     setData(newData);
-    console.log(data)
   } 
 
 
@@ -64,7 +63,7 @@ function App() {
         <div>
         <form onSubmit={handleSumbit}>
           <div>
-             <input  placeholder="מה השאלה שלך?" onChange={(e)=> handle(e)} dir="rtl" type="text" id="userInput" className="App-input" autocomplete="off" />
+             <input  placeholder="מה השאלה שלך?" onChange={(e)=> handle(e)} dir="rtl" type="text" id="userInput" className="App-input" autoComplete="off" />
           </div>
         <button>חיפוש</button>
         </form>
