@@ -40,7 +40,6 @@ function App() {
     setData(newData);
   };
 
-  //The Result components. It only appears when there are results for the search
 
   return (
     <div className="App">
@@ -71,7 +70,9 @@ function App() {
   );
 }
 
+//The Result components. It only appears when there are results for the search
 const Results = ({ data }) => {
+
   //Build the google search iframe from the question.
   function buildURL(string) {
     return (
