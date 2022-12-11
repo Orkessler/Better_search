@@ -127,7 +127,14 @@ p{
   border: 1px solid #DFE1E5;
   border-radius: 55px;
   padding-right: 20px;
-   
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  select,
+  textarea,
+  input {
+    font-size: 16px;
+  }
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
